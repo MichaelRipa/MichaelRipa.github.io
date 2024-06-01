@@ -1,0 +1,177 @@
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll caused by excessive width */
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background: #f8f9fa;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* The image will scale with the container up to 100% */
+  height: auto; /* Height is set to auto to maintain the aspect ratio */
+}
+
+/* Media query for screen sizes larger than 800px */
+@media (min-width: 450px) {
+  img {
+    max-width: 450px; /* Limits the image width to 800px on larger screens */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 449px) {
+  img {
+    width: 100%; /* Makes the image take up 100% of the screen width on smaller screens */
+  }
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-card {
+    width: 250px; /* Adjusted for more square-like appearance */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.tags {
+    padding: 5px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+
+.github-icon {
+    width: 12px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.button:hover {
+    background-color: #367B37;
+}
+
+.project-card .github-icon {
+    width: 20px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px 0; /* Adjust spacing around the icon */
+    display: inline-block; /* Ensures the image is treated as a block-level inline element */
+}
+
+/* Ensure images in .project-card are not affected by other styles */
+.project-card img {
+    height: 180px; /* Fixed height for consistency */
+    width: 100%; /* Ensure it covers the card width */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centers the categories within the container */
+    padding: 20px;
+    gap: 20px;  /* Adds space between the flex items */
+}
+
+.skill-category {
+    flex: 1 1 300px; 
+    max-width: 250px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    text-align: left;
+    min-height: 200px;
+}
+
+#skills {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px auto;
+    display: block;
+}
+
+.progress-circle svg {
+    transform: rotate(-90deg);
+}
+
+.progress-circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    color: #333;
+    z-index: 1;
+}
+

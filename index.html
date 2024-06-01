@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Michael Ripa Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header>
+         <h1>Michael Ripa - Portfolio</h1>
+         <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+         </nav>
+      </header>
+      <div id="img">
+         <img src="images/profile.jpg" alt="Portfolio Photo">
+      </div>
+      <section id="home">
+         <h2>Welcome! 👋</h2>
+         <p>I'm Michael, a pragmatic thinker with a deep focus on machine learning and data science. I studied <b>computer science</b> and <b>mathematics</b> at Carleton University. My aim is to use my career to tackle some of the <u>world's most pressing problems</u>.</p>
+      </section>
+      <section id="projects">
+         <h2>Projects</h2>
+         <p>Here are some of my key projects. Click on any project to learn more about it or visit the GitHub repository.</p>
+         <div class="projects-container">
+            <div class="project-card">
+               <h3>CounterMoral</h3>
+               <img src="images/countermoral.png" alt="Project 1">
+               <p>My honor's thesis, created an evaluation benchmark for model editing techniques on moral judgements</p>
+               <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">DL</span>
+                  <span class="tag">Research</span>
+               </div>
+               <a href="https://github.com/yourusername/project1" target="_blank">
+               <img src="images/github.png" alt="GitHub" class="github-icon">
+               </a>
+               <a href="project1-detail.html" class="button">Read More</a>
+            </div>
+            <div class="project-card">
+               <h3>Neureset</h3>
+               <img src="images/neureset.png" alt="Project 2">
+               <p>Simulates an EEG headset for neurofeedback therapy.</p>
+               <div class="tags">
+                  <span class="tag">C++</span>
+                  <span class="tag">Software Engineering</span>
+                  <span class="tag">Team</span>
+               </div>
+               <a href="https://github.com/yourusername/project2" target="_blank">
+               <img src="images/github.png" alt="GitHub" class="github-icon">
+               </a>
+               <a href="project2-detail.html" class="button">Read More</a>
+            </div>
+            <div class="project-card">
+               <h3>Soccer Database</h3>
+               <img src="images/statbombsoccerdb.png" alt="Project 3">
+               <p>Designed a SQL database to house soccer match data originally in JSON format, loading the data using Python, and then analyzing it through SQL queries to derive insights on team and player performance.</p>
+               <div class="tags">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Python</span>
+               </div>
+               <a href="https://github.com/MichaelRipa/StatsBombSoccerDB" target="_blank">
+               <img src="images/github.png" alt="GitHub" class="github-icon">
+               </a>
+               <a href="project2-detail.html" class="button">Read More</a>
+            </div>
+            <div class="project-card">
+               <h3>MAEPY</h3>
+               <img src="images/maepy.png" alt="Project 3">
+               <p>An experimental machine learning algorithm I developed during an internship. Detects duplicate entries in messy structured databases by generating embeddings for each entry and clustering.</p>
+               <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">ML</span>
+                  <span class="tag">R&D</span>
+               </div>
+               <a href="https://github.com/yourusername/project2" target="_blank">
+               <img src="images/github.png" alt="GitHub" class="github-icon">
+               </a>
+               <a href="project2-detail.html" class="button">Read More</a>
+            </div>
+         </div>
+      </section>
+      <section id="skills">
+         <h2>Professional Skills</h2>
+         <div class="skills-container">
+            <div class="skill-category">
+               <h3>Programming Languages</h3>
+               <div class="progress-circle" data-skill-level="90" name="Python"></div>
+               <div class="progress-circle" data-skill-level="75" name="SQL"></div>
+               <div class="progress-circle" data-skill-level="65" name="C++"></div>
+               <div class="progress-circle" data-skill-level="60" name="Javascript"></div>
+               <div class="progress-circle" data-skill-level="50" name="Bash"></div>
+               <div class="progress-circle" data-skill-level="50" name="C"></div>
+            </div>
+            <div class="skill-category">
+               <h3>Tools & Technologies</h3>
+               <div class="progress-circle" data-skill-level="80" name="Vim"></div>
+               <div class="progress-circle" data-skill-level="80" name="IPython"></div>
+               <div class="progress-circle" data-skill-level="80" name="Jupyter"></div>
+               <div class="progress-circle" data-skill-level="70" name="Git"></div>
+               <div class="progress-circle" data-skill-level="70" name="Linux"></div>
+               <div class="progress-circle" data-skill-level="65" name="Docker"></div>
+               <div class="progress-circle" data-skill-level="60" name="Postgresql"></div>
+               <div class="progress-circle" data-skill-level="50" name="Kubernetes"></div>
+               <div class="progress-circle" data-skill-level="40" name="Tmux"></div>
+               <div class="progress-circle" data-skill-level="30" name="NGINX"></div>
+            </div>
+            <div class="skill-category">
+               <h3>Frameworks & Libraries</h3>
+               <div class="progress-circle" data-skill-level="85" name="NumPy"></div>
+               <div class="progress-circle" data-skill-level="80" name="Pandas"></div>
+               <div class="progress-circle" data-skill-level="75" name="Matplotlib"></div>
+               <div class="progress-circle" data-skill-level="70" name="Transformers"></div>
+               <div class="progress-circle" data-skill-level="70" name="Scikit-learn"></div>
+               <div class="progress-circle" data-skill-level="60" name="Pytorch"></div>
+               <div class="progress-circle" data-skill-level="50" name="SpaCy"></div>
+               <div class="progress-circle" data-skill-level="40" name="Tensorflow"></div>
+               <div class="progress-circle" data-skill-level="40" name="Node.js"></div>
+            </div>
+         </div>
+      </section>
+      <section id="resume">
+         <h2>Resume</h2>
+         <p>Download my full resume <a href="/tech/cv/Michael Ripa CV.pdf">here</a>.</p>
+      </section>
+      <section id="contact">
+         <h2>Contact</h2>
+         <p>Email me at <a href="mailto:m.ripa123@gmail.com">m.ripa123@gmail.com</a></p>
+      </section>
+      <footer>
+         <p>Copyright © 2024 Michael Ripa. All rights reserved.</p>
+      </footer>
+      <script>
+         document.querySelectorAll('.progress-circle').forEach(function(circle) {
+             var level = parseInt(circle.getAttribute('data-skill-level'), 10);
+             var test = circle.getAttribute('name');
+             var radius = 10;  // Radius of the circle
+             var circumference = 2 * Math.PI * radius;  // Circumference of the circle
+             var offset = circumference - (level / 100 * circumference);  // Calculate how much of the circle should be filled
+         
+             var svg = `<span>${test} ${level}%</span>
+                        <svg width="40" height="40" style="transform: rotate(-90deg);">
+                            <circle cx="20" cy="20" r="10" fill="none" stroke="#eee" stroke-width="5"/>
+                            <circle cx="20" cy="20" r="10" fill="none" stroke="#4CAF30" stroke-width="5"
+                                    stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"/>
+                        </svg>`;
+         
+             circle.innerHTML = svg;
+         });
+      </script>
+   </body>
+</html>
