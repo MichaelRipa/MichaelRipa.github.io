@@ -168,3 +168,10 @@ img {
     z-index: 1;
 }
 
+.description {
+    display: block;
+    height: 200px;
+    text-align: center;
+}
+
+
